@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-viewchaild',
@@ -8,14 +8,15 @@ import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 export class ViewchaildComponent implements OnInit {
 
 
-@ViewChild ('btn',{static:true}) myelement:ElementRef ;
+  @ViewChild('btn', { static: true }) myelement: ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.myelement.nativeElement);
-    
-    this.myelement.nativeElement.style.color='red'
+
+  }
+  action(event) {
+    this.myelement.nativeElement.style.color = 'red'
   }
 
 }
