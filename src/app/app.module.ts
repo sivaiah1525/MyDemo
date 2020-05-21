@@ -7,7 +7,8 @@ import { ViewchaildComponent } from './viewchaild/viewchaild.component';
 import { UserComponent } from './user/user/user.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { HostlistenerComponent } from './@hostlistener/hostlistener/hostlistener.component';
-import { HostbindingComponent } from './@hostlistener/hostbinding/hostbinding.component'
+import { HostbindingComponent } from './@hostlistener/hostbinding/hostbinding.component';
+import { NgForComponent } from './ng-for/ng-for.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HostbindingComponent } from './@hostlistener/hostbinding/hostbinding.co
     ViewchaildComponent,
     UserComponent,
     HostlistenerComponent,
-    HostbindingComponent
+    HostbindingComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-sm-4" *ngFor="let x of productList">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h1>selact Class</h1>
+                    <div class="row">
+                        <div class="col-sm-2"><input type="radio"></div>
+                        <div class="col-sm-10">{{x.option1}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><input type="radio"></div>
+                        <div class="col-sm-10">{{x.option2}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><input type="radio"></div>
+                        <div class="col-sm-10">{{x.option3}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><input type="radio"></div>
+                        <div class="col-sm-10">{{x.option4}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
